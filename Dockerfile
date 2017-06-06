@@ -6,7 +6,7 @@ ENV \
     DEBUG=false
 
 RUN \
-    apk add --no-cache python py-requests py-setuptools libssl1.0 && \
+    apk add --no-cache python py-requests py-setuptools libssl1.0 procps jq curl && \
     apk add --no-cache --virtual=build-dependencies git gcc py-pip musl-dev libffi-dev python-dev openssl-dev && \
     cd /tmp && \
 
