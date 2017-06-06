@@ -2,6 +2,7 @@ FROM hope/docker-gen
 
 ENV \
     SIMPLE_VERSION=0.2.0 \
+    DOCKER_HOST=unix:///var/run/docker.sock \
     DEBUG=false
 
 RUN \
