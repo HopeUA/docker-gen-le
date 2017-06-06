@@ -1,7 +1,8 @@
 FROM hope/docker-gen
 
 ENV \
-    SIMPLE_VERSION=0.2.0
+    SIMPLE_VERSION=0.2.0 \
+    DEBUG=false
 
 RUN \
     apk add --no-cache python py-requests py-setuptools libssl1.0 && \
